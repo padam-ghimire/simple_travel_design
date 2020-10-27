@@ -1,0 +1,111 @@
+/* Global css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+p,
+button,
+input,
+li,
+label {
+  font-size: 2rem;
+}
+
+h2,
+h1 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+h4,
+h4 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+/* End Global Css */
+
+/* Navbar css */
+.main-head {
+  background-color: #131c27;
+  color: white;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  min-height: 10vh;
+  padding: 2rem;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+  flex: 2 1 40rem;
+}
+/* End Navbar css */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/img/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+}
+
+.hero h3 {
+  padding: 4rem;
+}
+
+/* Media */
+
+@media screen and (max-width: 931px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
+}

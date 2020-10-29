@@ -46,6 +46,10 @@ button {
   font-size: 1.8rem;
   color: white;
   cursor: pointer;
+  transition: background 0.5 ease;
+}
+button:hover {
+  background: #2e4b77;
 }
 /* End Global Css */
 
@@ -57,7 +61,7 @@ button {
 
 nav {
   display: flex;
-  width: 90%;
+  width: 90vw;
   min-height: 10vh;
   padding: 2rem;
   margin: auto;
@@ -76,6 +80,7 @@ nav ul {
   font-weight: 400;
   flex: 2 1 40rem;
 }
+
 /* End Navbar css */
 .hero {
   min-height: 90vh;
@@ -96,6 +101,56 @@ nav ul {
   padding: 4rem;
 }
 
+/* locations */
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/new-york-page.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+.locations-head h2 {
+  padding: 1rem 0;
+  text-decoration: underline;
+}
+.locations-head h3 {
+  background: linear-gradient(#131c27, #663b66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  pointer-events: none;
+}
+.moving-cloud-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+  z-index: -1;
+  top: 15%;
+  opacity: 0.5;
+}
+/* End of locations */
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
 /* Media */
 
 @media screen and (max-width: 931px) {
@@ -107,5 +162,21 @@ nav ul {
   }
   #logo {
     padding: 1rem;
+  }
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+    top: 15%;
+  }
+  .locations-head h3 {
+    background: rgba(19, 28, 38, 0.5);
+    padding: 1rem;
+    -webkit-text-fill-color: white;
   }
 }

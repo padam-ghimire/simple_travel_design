@@ -195,7 +195,45 @@ nav ul {
 .card p {
   padding: 1rem;
 }
-
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/contact-mountain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper {
+  width: 60%;
+  border-radius: 20px;
+  color: white;
+  background: rgba(19, 28, 38, 0.5);
+}
+.contact-head {
+  text-align: center;
+  padding: 4rem;
+}
+.name-form,
+.email-form {
+  padding: 2rem;
+  text-align: center;
+}
+.form-wrapper label {
+  margin: 0 3rem;
+}
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
 /* End of Benefits */
 /* Media */
 

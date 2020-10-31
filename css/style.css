@@ -196,7 +196,7 @@ nav ul {
   padding: 1rem;
 }
 #contact {
-  min-height: 100vh;
+  min-height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
     url(/img/contact-mountain.png);
   background-repeat: no-repeat;
@@ -208,6 +208,7 @@ nav ul {
 }
 .form-wrapper {
   width: 60%;
+
   border-radius: 20px;
   color: white;
   background: rgba(19, 28, 38, 0.5);
@@ -233,6 +234,30 @@ nav ul {
 }
 .form-wrapper input {
   padding: 1rem 3rem;
+}
+footer {
+  color: white;
+  background-color: rgba(19, 28, 38, 1);
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
 }
 /* End of Benefits */
 /* Media */
@@ -262,5 +287,14 @@ nav ul {
     background: rgba(19, 28, 38, 0.5);
     padding: 1rem;
     -webkit-text-fill-color: white;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 2rem;
+  }
+  .form-wrapper {
+    width: 100%;
   }
 }
